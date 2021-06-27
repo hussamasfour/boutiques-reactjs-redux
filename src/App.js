@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { Switch, Route, Redirect } from "react-router-dom";
 import { createStructuredSelector } from "reselect";
-import "./App.css";
+import "./App.scss";
 
 import HomePage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
@@ -13,6 +13,7 @@ import { auth, createUserProfileDocument } from "./firebase/firebase.util";
 
 import { setCurrentUser } from "./redux/user/user.action";
 import { selectCurrentUser } from "./redux/user/user.selectors";
+
 class App extends React.Component {
   unsubscribeFromAuth = null;
 

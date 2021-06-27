@@ -3,4 +3,12 @@
   display: flex;
   justify-content: space-between;
   margin: 30px auto;
+
+  @media screen and (max-width: 800px) {
+    font-size: 14px;
+    width: 100%;
+    flex-direction: column;
+
+    margin: 0 0 !important;
+  }
 }
